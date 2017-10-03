@@ -10,7 +10,11 @@ where the first term corresponds to TV, T is the temporal sparsity operator, F i
 The optimization problem is efficiently solved using the Split Bregman formulation.
 
 ## Code
-This demo compares TV, spatiotemporal TV and SPLICS on cardiac cine MRI data. To run SPLICS method you need the following MATLAB toolbox: 
+This demo compares TV, spatiotemporal TV and SPLICS on cardiac cine MRI data. 
+
+![Cardiac cine data set](https://github.com/HGGM-LIM/Motion-Estimation-Compressed-Sensing-MRI/blob/master/dataCine8fr.gif)
+
+To run SPLICS method you need the following MATLAB toolbox: 
 - FFD-based registration package. Dirk-Jan Kroon; B-spline grid, image and point based registration; 2012, retrieved from http://www.mathworks.com/matlabcentral/fileexchange/20057-b-spline-grid-image-and-point-based-registration
 
 ## Repository files
