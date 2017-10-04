@@ -9,11 +9,14 @@ SPLICS generalizes spatiotemporal total variation (ST-TV) by modelling the motio
 where the first term corresponds to TV, T is the temporal sparsity operator, F is the Fourier transform, u is the reconstrcuted image and f is undersampled data.
 The optimization problem is efficiently solved using the Split Bregman formulation.
 
-## Code
+## This Demo
 This demo compares TV, spatiotemporal TV and SPLICS on cardiac cine MRI data. 
+
+This version of the SPLICS comprises two steps: i) motion is estimated from a previous reconstruction (image given by TV in this example) to build a sparse temporal operator encoding motion, ii) image reconstruction taking into account the previously estimated motion operator. This process could be iterated for further improvement. We found that if the previous reconstruction had good quality, motion could be accurately estimated. A demo that iterates these two steps will be added to the toolbox soon. 
 
 ![Cardiac cine data set](https://github.com/HGGM-LIM/Motion-Estimation-Compressed-Sensing-MRI/blob/master/dataCine8fr.gif)
 
+## Requirements
 To run SPLICS method you need the following MATLAB toolbox: 
 - FFD-based registration package. Dirk-Jan Kroon; B-spline grid, image and point based registration; 2012, retrieved from http://www.mathworks.com/matlabcentral/fileexchange/20057-b-spline-grid-image-and-point-based-registration
 
